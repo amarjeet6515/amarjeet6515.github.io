@@ -1,0 +1,9 @@
+.footer {
+  text-align: center;
+  color: var(--clr-primary);
+  padding-bottom: 2em;
+}
+.a {
+  text-align: center;
+  font-size: smaller;
+}
