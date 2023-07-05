@@ -18,6 +18,8 @@ export const About = () => {
 
     window.open(previewUrl, "_blank");
     window.location.href = downloadUrl;
+
+    
   };
   return (
     <>
