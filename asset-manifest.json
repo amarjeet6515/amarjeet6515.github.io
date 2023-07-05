@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.fefacc56.css",
-    "main.js": "/static/js/main.7356c20e.js",
+    "main.js": "/static/js/main.f548f207.js",
     "static/media/Amarjeet.JPG": "/static/media/Amarjeet.38a197e165d624e8dbd9.JPG",
     "static/media/ecotourism.png": "/static/media/ecotourism.9569b8e1e7e31bfc3fd4.png",
     "static/media/bewakoof.png": "/static/media/bewakoof.703a73792df26ec68fe0.png",
     "static/media/healthkart.png": "/static/media/healthkart.917ab0de4969b2393f2e.png",
     "index.html": "/index.html",
     "main.fefacc56.css.map": "/static/css/main.fefacc56.css.map",
-    "main.7356c20e.js.map": "/static/js/main.7356c20e.js.map"
+    "main.f548f207.js.map": "/static/js/main.f548f207.js.map"
   },
   "entrypoints": [
     "static/css/main.fefacc56.css",
-    "static/js/main.7356c20e.js"
+    "static/js/main.f548f207.js"
   ]
 }
