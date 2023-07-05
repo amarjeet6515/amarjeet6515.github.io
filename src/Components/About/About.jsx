@@ -79,7 +79,14 @@ export const About = () => {
             rel="noreferrer"
             id="resume-link-2"
           > */}
-          <button className="nav-link resume"  id="resume-button-2" onClick={downloadResume}>
+          <button 
+          className="nav-link resume" 
+           id="resume-button-2"
+            onClick={downloadResume}
+            // className="link link--icon"
+            target="_blank"
+            rel="noreferrer"
+            >
           <DescriptionIcon />
 
           </button>
