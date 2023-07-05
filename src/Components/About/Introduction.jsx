@@ -16,12 +16,12 @@ export const Introduction = () => {
           </h2>
           <div className={"introduction " + themename}>
             <div className="introduction_logocontainer">
-              <img src={Amarjeet} alt="myimage" />
+              <img src={Amarjeet} className="home-img" alt="myimage" />
             </div>
-            <div className="introduction_datacontainer">
-              <h4>
+            <div className="introduction_datacontainer" >
+              <h4  >
                 Hi Everyone, I am{" "}
-                <span className="different">Amarjeet Ray </span> from{" "}
+                <span className="different" id="user-detail-name">Amarjeet Ray </span> from{" "}
                 <span className="different"> Hajipur, Bihar</span>. I am pleased to share that I have 
                 successfully obtained my Bachelor's degree in Civil Engineering from 
                 Techno India College of Technology, Kolkata. Additionally, I have recently completed

@@ -7,9 +7,9 @@ export const Header = () => {
   const [{ themename }] = React.useContext(ThemeContext);
   return (
     <>
-      <header className={"header center " + themename}>
+      <header className={"header center " + themename}  id="home">
         <h3>
-          <a href="#home" className="link">
+          <a href="#home" className="link" >
             im@amarjeet6515
           </a>
         </h3>

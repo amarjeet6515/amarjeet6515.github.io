@@ -26,7 +26,14 @@ export const Github = () => {
           blockMargin={5}
           theme={themename}
           fontSize={16}
+          class="react-activity-calendar"
         />
+        <div>
+          <img src="https://github-readme-streak-stats.herokuapp.com?user=amarjeet6515&theme=tokyonight&hide_border=true" id="github-streak-stats" alt="" />
+          &nbsp;&nbsp;
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=amarjeet6515&theme=tokyonight&hide_border=true" id="github-top-langs" alt="" />
+          <img src="https://github-readme-stats.vercel.app/api?username=amarjeet6515&theme=tokyonight&hide_border=true" id="github-stats-card" alt="" />
+        </div>
       </div>
     </>
   );

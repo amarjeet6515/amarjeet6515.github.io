@@ -5,26 +5,33 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import DescriptionIcon from "@material-ui/icons/Description";
-import PublicIcon from "@material-ui/icons/Public";
 import { Introduction } from "./Introduction";
 import { Timeline } from "./Timeline";
 import { Techstacks } from "./Techstacks";
 export const About = () => {
+
+  const downloadResume = () => {
+    const previewUrl = "https://www.dropbox.com/s/ev7ca80o3k8wlzi/Amarjeet_Ray_Resum%C3%A9.pdf?dl=0";
+    const downloadUrl =
+      "https://www.dropbox.com/s/ev7ca80o3k8wlzi/Amarjeet_Ray_Resum%C3%A9.pdf?dl=1";
+
+    window.open(previewUrl, "_blank");
+    window.location.href = downloadUrl;
+  };
   return (
     <>
-      <div className="about center">
+      <div className="about center section"  id="about" >
         <h1 data-aos="fade-right">
           Hi, I am <span className="about__name">Amarjeet Ray</span>
         </h1>
         <Type />
-        <p className="about__desc" data-aos="fade-right">
+        <p className="about__desc" data-aos="fade-right" id="user-detail-intro">
           Software development professional, adept at engineering robust and
           user-centric solutions. Collaborative, team player who is proficient
           in working with interdisciplinary teams and executing goal oriented
-          projects. Strongly interested in obtaining a Software Developer
-          position to work on enhancing the product experience.
+          projects. React, HTML, CSS, JavaScript proficiency. Strongly interested in obtaining a Software Developer
+          position to work on enhancing the product experience. 
         </p>
         <div className="about__contact center">
           <a
@@ -63,21 +70,26 @@ export const About = () => {
           >
             <LinkedInIcon />
           </a>
-          <a
-            href="https://drive.google.com/file/d/1QP-27vYUWjfK3NCkJOvcUdbFiO7TEStE/view?usp=sharing"
+          {/* <a
+            href="https://drive.google.com/file/d/1n8rr2zgXUDQ8j68bLWhJeZyNSvJxZtLv/view"
             aria-label="github"
+            download
             className="link link--icon"
             target="_blank"
             rel="noreferrer"
-          >
-            <DescriptionIcon />
-          </a>
+            id="resume-link-2"
+          > */}
+          <button className="nav-link resume"  id="resume-button-2" onClick={downloadResume}>
+          <DescriptionIcon />
+
+          </button>
+          {/* </a> */}
         </div>
       </div>
       <Introduction />
       <Timeline />
       <section id="#skills">
-        {/* <Techstacks /> */}
+        <Techstacks />
       </section>
     </>
   );

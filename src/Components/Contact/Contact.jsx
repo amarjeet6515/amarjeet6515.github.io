@@ -10,7 +10,7 @@ export const Contact = () => {
 
   return (
     <>
-      <div className="section">
+      <div className="section"  id="contact" >
         <h2 className="section__title" data-aos="fade-right">
           Get in <span className="different">Touch</span>
         </h2>
@@ -19,6 +19,7 @@ export const Contact = () => {
             href="https://www.linkedin.com/in/amarjeet-ray-3800501b4/"
             target="_blank"
             rel="noreferrer"
+            id="contact-linkedin"
           >
             <FaLinkedin className="linkedin" />
           </a>
@@ -26,6 +27,7 @@ export const Contact = () => {
             href="https://github.com/amarjeet6515"
             target="_blank"
             rel="noreferrer"
+            id="contact-github"
           >
             <VscGithub className="github" />
           </a>
@@ -33,11 +35,12 @@ export const Contact = () => {
             href="mailto:amarjeetray6515@gmail.com"
             target="_blank"
             rel="noreferrer"
-          >
+            id="contact-email"
+          >amarjeetray6515@gmail.com
             <CgMail className="email" />
           </a>
-          <a href="tel:+919835153072" target="_blank" rel="noreferrer">
-            <BsFillTelephoneFill className="phone" />
+          <a href="tel:+919835153072" target="_blank" id="contact-phone" rel="noreferrer">
+            <BsFillTelephoneFill className="phone" />+919835153072
           </a>
         </div>
       </div>

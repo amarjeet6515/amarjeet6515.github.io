@@ -15,9 +15,18 @@ export const Navbar = () => {
     }
     setShowNavList(!showNavList);
   };
+
+  const downloadResume = () => {
+    const previewUrl = "https://www.dropbox.com/s/ev7ca80o3k8wlzi/Amarjeet_Ray_Resum%C3%A9.pdf?dl=0";
+    const downloadUrl =
+      "https://www.dropbox.com/s/ev7ca80o3k8wlzi/Amarjeet_Ray_Resum%C3%A9.pdf?dl=1";
+
+    window.open(previewUrl, "_blank");
+    window.location.href = downloadUrl;
+  };
   return (
     <>
-      <nav className="center nav">
+      <nav className="center nav" id="nav-menu">
         <ul
           style={{ display: showNavList ? "flex" : null }}
           className="nav__list"
@@ -26,16 +35,18 @@ export const Navbar = () => {
             <a
               href="#home"
               onClick={() => toggleNavList("#home")}
-              className="link link--nav"
+              // className="link link--nav"
+              className="nav-link home"
             >
               Home
             </a>
           </li>
-          <li className="nav__list-item">
+          <li className="nav__list-item ">
             <a
               href="#about"
               onClick={() => toggleNavList("#about")}
-              className="link link--nav"
+              // className="link link--nav"
+              className="nav-link about"
             >
               About
             </a>
@@ -44,7 +55,8 @@ export const Navbar = () => {
             <a
               href="#skills"
               onClick={() => toggleNavList("#skills")}
-              className="link link--nav"
+              // className="link link--nav"
+              className="nav-link skills"
             >
               Skills
             </a>
@@ -53,7 +65,8 @@ export const Navbar = () => {
             <a
               href="#projects"
               onClick={() => toggleNavList("#projects")}
-              className="link link--nav"
+              // className="link link--nav"
+              className="nav-link projects"
             >
               Projects
             </a>
@@ -62,21 +75,27 @@ export const Navbar = () => {
             <a
               href="#contact"
               onClick={() => toggleNavList("#contact")}
-              className="link link--nav"
+              // className="link link--nav"
+              className="nav-link contact"
             >
               Contact
             </a>
           </li>
-          <li className="nav__list-item">
-            <a
-              href="https://drive.google.com/file/d/1QP-27vYUWjfK3NCkJOvcUdbFiO7TEStE/view?usp=sharing"
+          <li className="nav__list-item"  id="resume-button-2">
+            {/* <a
+              href="https://drive.google.com/file/d/1n8rr2zgXUDQ8j68bLWhJeZyNSvJxZtLv/view"
               onClick={toggleNavList}
-              className="link link--nav"
+              download
               target="_blank"
               rel="noreferrer"
+              id="resume-link-1"
+              className="nav-link resume"
             >
               Resume
-            </a>
+            </a> */}
+            <button className="nav-link resume"  id="resume-button-1" onClick={downloadResume}>
+            Resume
+            </button>
           </li>
         </ul>
         <button
