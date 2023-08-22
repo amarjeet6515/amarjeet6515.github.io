@@ -19,12 +19,12 @@ export const About = () => {
     window.open(previewUrl, "_blank");
     window.location.href = downloadUrl;
 
-    
+
   };
   return (
     <>
-      <div className="about center section"  id="about" >
-        <h1 data-aos="fade-right">
+      <div className="about center section"  id="about"  >
+        <h1 data-aos="fade-right" style={{marginTop:"70px"}}>
           Hi, I am <span className="about__name">Amarjeet Ray</span>
         </h1>
         <Type />

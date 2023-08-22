@@ -6,8 +6,8 @@ import "./Header.css";
 export const Header = () => {
   const [{ themename }] = React.useContext(ThemeContext);
   return (
-    <>
-      <header className={"header center " + themename}  id="home">
+    <div style={{position:"fixed", marginTop:"-55px", marginBottom:"100px", opacity:"1", width:"100%", zIndex:"+1"}}>
+      <header className={"header center " + themename}  id="home" >
         <h3>
           <a href="#home" className="link" >
             im@amarjeet6515
@@ -15,6 +15,6 @@ export const Header = () => {
         </h3>
         <Navbar />
       </header>
-    </>
+    </div>
   );
 };

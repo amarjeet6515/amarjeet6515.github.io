@@ -36,11 +36,11 @@ export const Contact = () => {
             target="_blank"
             rel="noreferrer"
             id="contact-email"
-          >amarjeetray6515@gmail.com
+          >
             <CgMail className="email" />
           </a>
           <a href="tel:+919835153072" target="_blank" id="contact-phone" rel="noreferrer">
-            <BsFillTelephoneFill className="phone" />+919835153072
+            <BsFillTelephoneFill className="phone" />
           </a>
         </div>
       </div>

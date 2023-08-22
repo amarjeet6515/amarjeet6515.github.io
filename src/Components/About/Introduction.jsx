@@ -9,8 +9,8 @@ export const Introduction = () => {
 
   return (
     <>
-      <section id="#about">
-        <div className="section" data-aos="fade-right">
+      <section id="#about" class="about section" >
+        <div className="section" data-aos="fade-right" >
           <h2 className="section__title">
             About <span className="different">Me</span>
           </h2>
