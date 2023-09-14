@@ -46,4 +46,4 @@ Here are some screenshots of the Portfolio :
 
 ## Contact
 
-Feel free to contact me at amarjeet6515@gmail.com for any questions or inquiries.
+Feel free to contact me at amarjeetray6515@gmail.com for any questions or inquiries.
