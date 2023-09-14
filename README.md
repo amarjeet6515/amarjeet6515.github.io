@@ -34,7 +34,7 @@ About Me: Share a brief biography and introduce myself to visitors.
 
 Here are some screenshots of the Portfolio :
 
-![Home Page](Images/home.png)
+![Home Page](Images/intro.png)
 
 ![Timeline](Images/timeline.png)
 
